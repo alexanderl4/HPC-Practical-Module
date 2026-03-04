@@ -21,6 +21,11 @@ for(int i = 1; i <= 100; i++) {
 }
 ```
 
+#### Practice 3: Data Race (Reduction) Exploration
+1. **Compile and run the program. Why does the calculation output become chaotic/messy?**
+
+   **Answer:** The output becomes unpredictable due to a **Data Race**. When the loop is forced to run in parallel, multiple processor cores attempt to read and write to the exact same shared memory variable at the exact same time. Because there is no locking mechanism (like a Mutex or Reduction), the cores end up overwriting each other's calculations, causing some data to be lost and resulting in a completely random final total.
+
 #### Practice 4.1
 1. **Change the read file name to "file_salah.txt". What happens?**
 
