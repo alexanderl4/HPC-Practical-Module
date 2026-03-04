@@ -1,15 +1,15 @@
 
  1. Exploration Instructions Answers
- Practice 1 (`for` loop):  If `int i = 0`: The sum result doesn't change (because you are just adding 0), but the loop will run 1 extra time.
-   If `i += 2` (limit 10): The program only adds the odd numbers (1, 3, 5, 7, 9), making the total 25.
-   If `= 0` is removed: The variable will grab a random value from the computer's leftover memory (garbage value), making the final addition completely incorrect/random.
- Practice 2 (`while` loop):  If `int number = 10;`: The program will finish immediately without asking for any input. Why? Because the while loop checks the condition `number < 0` at the very beginning.   Since 10 is not less than 0 (false), the loop block is skipped entirely.
- Practice 3 (`do-while` to `while`):  The main logical difficulty is that we must provide a "dummy initial value" (e.g., `char choice = 'Y';`) before the while loop. If we don't, the system will evaluate  the condition as false immediately and refuse to execute the code block inside the loop.
+* **Practice 1 (`for` loop):** * If `int i = 0`: The sum result doesn't change (because you are just adding 0), but the loop will run 1 extra time.
+  * If `i += 2` (limit 10): The program only adds the odd numbers (1, 3, 5, 7, 9), making the total 25.
+  * If `= 0` is removed: The variable will grab a random value from the computer's leftover memory (garbage value), making the final addition completely incorrect/random.
+* **Practice 2 (`while` loop):** * If `int number = 10;`: The program will finish immediately without asking for any input. Because the *while* loop checks the condition `number < 0` at the very beginning. Since 10 is not less than 0 (*false*), the loop block is skipped entirely.
+* **Practice 3 (`do-while` to `while`):** * The main logical difficulty is that we **must** provide a "dummy initial value" (e.g., `char choice = 'Y';`) before the *while* loop. If we don't, the system will evaluate the condition as false immediately and refuse to execute the code block inside the loop.
 
  3. Independent Task Answer
 ```cpp
 include <iostream> //  Includes the standard library for input (cin) and output (cout) functions
-using namespace std; //  Uses the standard namespace so we don't have to type std:: repeatedly
+using namespace std; //  Uses the standard namespace
 
 int main() { //  The main function, the starting point of the program execution
     int number; //  Declares a variable to store the number inputted by the user
